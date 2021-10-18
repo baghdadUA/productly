@@ -179,3 +179,46 @@ nav ul li a:active{
 .tools-categories-item p{
     margin-bottom: 35px;
 }
+.professionals{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.p-desc{
+    padding-right: 10%;
+    text-align: justify;
+}
+.professionals h1{
+    position: relative;
+}
+.professionals h1::before{
+    content: 'Effortless Validation for';
+    position: absolute;
+    top: -14px;
+    left: 0;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.professionals h3{
+    margin-bottom: 12px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+}
+.professionals p{
+    margin-bottom: 26px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.p-img{
+    margin-left: 10%;
+}
