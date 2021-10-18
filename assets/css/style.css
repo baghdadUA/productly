@@ -7,6 +7,11 @@ a{
     text-decoration: none;
     position: relative;
 }
+h1{
+    font-family: Poppins;
+    font-size: 44px;
+    margin-bottom: 30px;
+}
 .container-wrapp{
     max-width: 1400px;
     margin: 0 auto;
@@ -85,7 +90,7 @@ nav ul li a:active{
     color: #173A56;
     cursor: pointer;
 
-    transition: all 0.25s;
+    transition: all 0.55s;
 
 }
 .btn-1:hover{
@@ -111,7 +116,7 @@ nav ul li a:active{
     color: #FFF;
     cursor: pointer;
 
-    transition: all 0.25s;
+    transition: all 0.55s;
 }
 .btn-2:hover{
     background: #F2F2F2;
@@ -119,4 +124,58 @@ nav ul li a:active{
 }
 .btn-2:active{
     color:#BCD0E5;
+}
+.get-started{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 110px;
+}.gt-desc{
+    margin: auto 0;
+}
+.gt-desc p{
+    font-family: Poppins;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.gt-desc a{
+    margin-left: 30px;
+}
+.gt-desc a::before{
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-radius: 5px;
+    background: #FF9900;
+    transition: all 0.25s;
+    transform: scaleX(0);
+}
+.gt-desc a:hover::before{
+    transform: scaleX(1);
+}
+.gt-desc a:active{
+    color:#ff990085;
+}
+.gt-desc a, span{
+    color: #FF9900;
+}
+.tools{
+    text-align: center;
+    margin-bottom: 210px;
+}
+.tools-categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: left;
+}
+.tools-categories-item img{
+    margin-bottom: 30px;
+}
+.tools-categories-item h3{
+    margin-bottom: 15px;
+}
+.tools-categories-item p{
+    margin-bottom: 35px;
 }
