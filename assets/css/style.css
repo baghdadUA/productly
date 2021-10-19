@@ -6,6 +6,13 @@
 a{
     text-decoration: none;
     position: relative;
+    font-size: 16px;
+}
+.link{
+    transition: all .25s;
+}
+.link:hover{
+    text-shadow: 1px 2px 6px #b4b4b4;
 }
 h1{
     font-family: Poppins;
@@ -22,7 +29,7 @@ h1{
 .container{
     max-width: 1110px;
     margin: 0 auto;
-    padding: 35px 0 90px 0;
+    padding: 35px 0 80px 0;
 }
 .container header{
     position: relative;
@@ -43,8 +50,7 @@ nav{
     top: 50%;
     right: 25%;
     transform: translate(0, -90%);
-    list-style: none;
-    
+    list-style: none;   
 }
 nav ul li{
     display: inline-block;
@@ -52,21 +58,6 @@ nav ul li{
 }
 nav ul li:first-child{
     margin-left: .1px;
-}
-nav ul li a::before{
-    position: absolute;
-    content: "";
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2.5px;
-    border-radius: 5px;
-    background: #173A56;
-    transition: all 0.55s;
-    transform: scaleX(0);
-}
-nav ul li a:hover::before{
-    transform: scaleX(1);
 }
 nav ul li a:active{
     color: #BCD0E5;
@@ -263,4 +254,40 @@ nav ul li a:active{
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+}
+footer{
+    position: relative;
+    padding-top: 105px;
+}
+footer::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 1px;
+    border-radius: 3px;
+    background: #BCD0E5;
+}
+.footer-nav-sign-search{
+    display: grid;
+    grid-template-columns: 1fr .7fr .7fr .7fr;
+}
+.footer-nav ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+.footer-sign-search{
+    margin: auto 0;
+}
+.footer-sign-search input{
+    width: 260px;
+    height: 30px;
+    margin:0 0 12px 0;
+
+    border-radius: 3px;
+    border: 2px solid #BCD0E5;
+    background: #f2f2f2;
+}
+.footer-sign-search input:focus{
+    outline: none;
 }
